@@ -16,13 +16,13 @@ pipeNorth.src = "https://res.cloudinary.com/jjaijg/image/upload/v1529233286/imag
 pipeSouth.src = "https://res.cloudinary.com/jjaijg/image/upload/v1529233286/images/pipeSouth.png";
 
 // some variables
-var gap = 85;
+var gap = 88;
 var constant = pipeNorth.height + gap;
 
 var bX = 10;
 var bY = 150;
 
-var gravity = 1.5;
+var gravity = 1.4;
 
 var score = 0;
 
@@ -66,7 +66,7 @@ function draw() {
     if (pipe[i].x == 125) {
       pipe.push({
         x : cvs.width,
-        y : Math.floor(Math.random() * pipeNorth.height) - pipeNorth.height+50
+        y : Math.floor(Math.random() * pipeNorth.height) - pipeNorth.height
       });
     }
     
